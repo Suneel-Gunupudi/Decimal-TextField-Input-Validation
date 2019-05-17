@@ -9,7 +9,6 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
             guard let text = textField.text else { return true }
             let countdots = textField.text!.components(separatedBy:".").count - 1
             if countdots == 0 {
-                
                 if text.isEmpty {
                     let newText = "0" + string
                     textField.text = newText
